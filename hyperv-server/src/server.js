@@ -12,7 +12,7 @@ import { adminProductsRouter } from "./routes/adminProducts.js";
 
 const app = express();
 const PORT = process.env.PORT || 4000;
-const CORS_ORIGIN = process.env.CORS_ORIGIN || "http://localhost:5173";
+const CORS_ORIGIN = process.env.CORS_ORIGIN || "https://hyper-v.vercel.app";
 
 app.use(cors({ origin: CORS_ORIGIN }));
 app.use(express.json());
@@ -49,7 +49,7 @@ async function start() {
   }
 
   app.listen(PORT, () => {
-    console.log(`hyperv-server listening on http://localhost:${PORT}`);
+    console.log(`hyperv-server listening on ${CORS_ORIGIN}`);
   });
 }
 
