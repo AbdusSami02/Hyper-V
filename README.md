@@ -1,21 +1,5 @@
 <div align="center">
 
-<<<<<<< HEAD
-HyperV is a complete storefront built end-to-end: a React marketing/shop site backed by a real Express + SQLite API — not a static mockup. It handles actual cart checkout, server-side stock validation, order tracking, and has a password-protected admin dashboard for managing orders and inventory.
-
-Features
-🛒 Cart & checkout — add flavors to cart, check out with a real order created server-side. Prices and stock are re-validated against the database on every order, never trusted from the client.
-📦 Live inventory — stock is decremented atomically on checkout, so the app can't oversell a flavor even under concurrent orders.
-🔍 Order tracking — customers can look up any order by its confirmation number (/track-order) and see its current status.
-🔐 Admin dashboard (/admin) — password-protected view of all orders and inventory, with the ability to update order status (pending → paid → shipped → cancelled) and edit stock levels.
-✉️ Contact form — submissions are stored in the database, not just faked client-side.
-🎨 Animated, motion-heavy storefront (Framer Motion + GSAP) with a distinct neon/energy-drink visual identity.
-Tech stack
-
-Frontend — React 19, Vite, React Router, Tailwind CSS 4, Framer Motion, GSAP, lucide-react icons.
-
-Backend — Node.js, Express 5, SQLite via Node's built-in node:sqlite module (no native compilation required — works out of the box on any OS).
-=======
 # ⚡ HYPER V
 
 **A full-stack e-commerce storefront for a fictional energy drink brand.**
@@ -164,4 +148,3 @@ walkthrough with exact settings and troubleshooting:
   multiple server instances without moving sessions into the database.
 - **No rate limiting** yet on public endpoints like `/api/contact` or
   `/api/admin/login`.
->>>>>>> 1d099c4 (Connect backend)
